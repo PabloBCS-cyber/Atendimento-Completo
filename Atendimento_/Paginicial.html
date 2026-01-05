@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Caixa de Atendimento</title>
+</head>
+
+<body>
+
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="imgs/Anúncio de vídeo in-stream de restaurante fotográfico.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <br><br>
+
+    <div class="Conteudo">
+
+        <!-- GERAR SENHA -->
+        <article id="caixinha">
+            <section>
+                <p id="p1">Gerar senha</p>
+                <button type="button" id="re">Gerar</button>
+            </section>
+
+            <section>
+                <p id="palavra">Última senha: <span id="senharand">_ _ _</span></p>
+            </section>
+        </article>
+
+        <!-- CAIXA 1 -->
+        <article id="caixinha2">
+            <p id="p2">Caixa 1</p>
+            <ul id="lista1"></ul>
+        </article>
+
+        <!-- CAIXA 2 -->
+        <article id="caixinha3">
+            <p id="p2">Caixa 2</p>
+            <ul id="caixa2"></ul>
+        </article>
+
+        <!-- AVALIAÇÕES -->
+        <article id="avaliar">
+            <section>
+                <h1>Avaliações</h1>
+                <p id="nota_p"></p>
+                <img id="grade" src="">
+            </section>
+
+            <section>
+                <br><br>
+                <p>Positivas: <span id="upvote">0</span></p>
+                <p>Regulares: <span id="neutro">0</span></p>
+                <p>Negativas: <span id="downvote">0</span></p>
+            </section>
+        </article>
+
+        <!-- CLIMA (2 CIDADES) -->
+        <article id="caixinha-clima">
+            <h2 style="color:white; text-align:center; font-size:34px;">Clima das cidades</h2>
+            <div id="clima-container" style="margin-top:15px; color:white; display:flex; gap:60px; height:24px; width:09x;"></div>
+        </article>
+
+        <!-- FILA DE ESPERA E PRONTOS -->
+        <article id="caixinha1">
+            <section id="lado_a">
+                <h1 id="p3">Espera</h1>
+                <menu id="lista"></menu>
+            </section>
+
+            <section id="lado_b">
+                <h1 id="p3-b">Pronto</h1>
+                <ul id="recebimentos"></ul>
+            </section>
+        </article>
+    </div>
+
+    <!-- Scripts -->
+    <script src="portaacoes.js"></script>
+    <script src="clima.js"></script>
+
+</body>
+</html>
